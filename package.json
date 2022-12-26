@@ -6,7 +6,7 @@
   "main": "index.js",
   "scripts": {
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
+    "deploy": "gh-pages -d client/build",
     "start": "node app",
     "server": "nodemon",
     "client": "npm start --prefix client",

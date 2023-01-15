@@ -23,12 +23,38 @@ const NavBar = (props) => {
               // icon is optional
             },
             {
-              title: 'Resume',
-              itemId: '/resume',
+              title: 'Projects',
+              subNav: [
+                {
+                  title: 'Camera/Optics',
+                  itemId: '/optics',
+                },
+                {
+                  title: 'AR/VR',
+                  itemId: '/arvr',
+                },
+                {
+                  title: 'Biotech',
+                  itemId: '/biotech',
+                },
+                {
+                  title: 'Telecom',
+                  itemId: '/telecom',
+                },
+                {
+                  title: 'Probe Cards',
+                  itemId: '/probecards',
+                },
+              ],
+            },
+            ,
+            {
+              title: 'Slides',
+              itemId: '/slides',
             },
             {
-              title: 'Projects',
-              itemId: '/projects',
+              title: 'Resume',
+              itemId: '/resume',
             },
           ]}
         />);

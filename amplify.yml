@@ -1,9 +1,6 @@
 version: 1
 backend:
   phases:
-    preBuild:
-      commands:
-        - npm ci
     build:
       commands:
         - npm run server
@@ -12,7 +9,6 @@ frontend:
     preBuild:
       commands:
         - cd client
-        - npm ci
     build:
       commands:
         - npm run client

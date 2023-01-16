@@ -4,10 +4,10 @@ frontend:
     preBuild:
       commands:
         - cd client
-        - npm install --verbose
+        - npm install
     build:
       commands:
-        - npm start
+        - npm run start
   artifacts:
     files:
         - "**/*"

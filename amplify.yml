@@ -3,10 +3,10 @@ frontend:
   phases:
     preBuild:
       commands:
+        - cd client
         - npm install --verbose
     build:
       commands:
-        - cd client
         - npm start
   artifacts:
     files:

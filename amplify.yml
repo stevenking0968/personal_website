@@ -6,7 +6,8 @@ frontend:
         - npm install --verbose
     build:
       commands:
-        - npm run dev
+        - cd client
+        - npm start
   artifacts:
     files:
         - "**/*"

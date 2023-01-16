@@ -1,8 +1,7 @@
 import React from "react";
 
-import { Worker } from '@react-pdf-viewer/core';
 // Core viewer
-import { Viewer } from '@react-pdf-viewer/core';
+import { Viewer, Worker } from '@react-pdf-viewer/core';
 // Plugins
 import { defaultLayoutPlugin } from '@react-pdf-viewer/default-layout';
 // Import styles
@@ -17,7 +16,7 @@ export default function PDFViewer(props) {
 	let fileUrl = props.fileUrl;
 	const defaultLayoutPluginInstance = defaultLayoutPlugin();
 	  return (
-	    <div className="resume">
+	    <div className="resume" style={{minWidth:'1200px'}}>
 	      <Worker workerUrl={`https://unpkg.com/pdfjs-dist@${pdfjsVersion}/build/pdf.worker.min.js`}>
 	      <Viewer
 			fileUrl={fileUrl}

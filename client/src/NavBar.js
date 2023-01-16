@@ -17,37 +17,35 @@ const NavBar = (props) => {
           }}
           items={[
             {
-              title: 'About',
+              title: 'About Me',
               itemId: '/',
               // you can use your own custom Icon component as well
               // icon is optional
             },
             {
-              title: 'Projects',
-              subNav: [
-                {
-                  title: 'Camera/Optics',
-                  itemId: '/optics',
-                },
-                {
-                  title: 'AR/VR',
-                  itemId: '/arvr',
-                },
-                {
-                  title: 'Biotech',
-                  itemId: '/biotech',
-                },
-                {
-                  title: 'Telecom',
-                  itemId: '/telecom',
-                },
-                {
-                  title: 'Probe Cards',
-                  itemId: '/probecards',
-                },
-              ],
+              title: 'Projects - Camera/Optics',
+              itemId: '/optics',
             },
-            ,
+            {
+              title: 'Projects - AR/VR',
+              itemId: '/ar-vr',
+            },
+            {
+              title: 'Projects - Biotech',
+              itemId: '/biotech',
+            },
+            {
+              title: 'Projects - Telecom',
+              itemId: '/telecom',
+            },
+            {
+              title: 'Projects - Probe Cards',
+              itemId: '/probecards',
+            },
+            {
+              title: 'Projects - Simulations',
+              itemId: '/simulations',
+            },
             {
               title: 'Slides',
               itemId: '/slides',

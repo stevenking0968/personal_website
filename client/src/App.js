@@ -13,6 +13,7 @@ import Telecom from './Telecom'
 import ProbeCards from './ProbeCards'
 import Slides from './Slides'
 import Optics from './Optics'
+import Simulations from './Simulations'
 import createHistory from 'history/createBrowserHistory';
 
 const history = createHistory();
@@ -43,11 +44,12 @@ const App = (props) => {
               <Route exact path="/"><Home /></Route>
               <Route exact path="/resume"><Resume /></Route>
               <Route exact path="/slides"><Slides /></Route>
-              <Route exact path="/arvr"><ARVR /></Route>
+              <Route exact path="/ar-vr"><ARVR /></Route>
               <Route exact path="/telecom"><Telecom /></Route>
               <Route exact path="/probecards"><ProbeCards /></Route>
               <Route exact path="/biotech"><Biotech /></Route>
               <Route exact path="/optics"><Optics /></Route>
+              <Route exact path="/simulations"><Simulations/></Route>
             </Switch>
         </Col>
       </Container>
